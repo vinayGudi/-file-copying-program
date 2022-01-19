@@ -20,4 +20,4 @@ phases:
       - export TF_LOG="DEBUG"
       - terraform plan -out dev-plan.tfplan -var-file=environment/dev/variables.tfvars -input=false
       #- terraform apply "dev-plan.tfplan"
-      # - aws s3 cp $CI_ENVIRONMENT_NAME-plan.tfplan s3://clixtream-infra-state-bucket/infra/
+      #- aws s3 cp $CI_ENVIRONMENT_NAME-plan.tfplan s3://clixtream-infra-state-bucket/infra/
