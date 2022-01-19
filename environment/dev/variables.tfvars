@@ -1,7 +1,7 @@
 dag_s3_path        = "dev/dags/"
 aws_region         = "ap-south-1"
 execution_role_arn = "arn:aws:iam::033812576448:role/airflow-role"
-name               = "insearch-dev-airflow-user-sss"
+name               = "insearch-dev-airflow-user-final"
 sg_id              = "sg-0f3f87060e17b563f"
 private_subnet_1   = "subnet-0a210c0dc63c87fc5"
 private_subnet_2   = "subnet-03fd32bba7e068032"
