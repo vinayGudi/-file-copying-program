@@ -19,5 +19,5 @@ phases:
       - terraform init -input=false -backend-config=environment/dev/s3-bucket.tfvars
       - export TF_LOG="DEBUG"
       - terraform plan -out dev-plan.tfplan -var-file=environment/dev/variables.tfvars -input=false
-      #- terraform apply "dev-plan.tfplan"
+      - terraform apply "dev-plan.tfplan"
       #- aws s3 cp $CI_ENVIRONMENT_NAME-plan.tfplan s3://clixtream-infra-state-bucket/infra/
